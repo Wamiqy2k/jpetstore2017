@@ -32,7 +32,7 @@
   <artifactId>maven-jpetstore</artifactId>
   <packaging>war</packaging>
 
-   <name>JPetStore_2018</name>
+   <name>JPetStore_2018_pom</name>
   <url>http://www.mybatis.org</url>
 
   <!-- <scm>
