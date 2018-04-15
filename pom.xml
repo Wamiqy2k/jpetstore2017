@@ -27,9 +27,9 @@
     <relativePath />
   </parent> 	-->
 
-  <groupId>maven-org.mybatis</groupId>
-  <version>maven-6.0.2-SNAPSHOT</version>
-  <artifactId>maven-jpetstore</artifactId>
+  <groupId>com.dxc</groupId>
+  <version>1.0.0-SNAPSHOT</version>
+  <artifactId>jpetstore</artifactId>
   <packaging>war</packaging>
 
    <name>JPetStore_2018_pom</name>
@@ -48,19 +48,24 @@
   <ciManagement>
     <system>Travis CI</system>
     <url>https://travis-ci.org/mybatis/jpetstore-6</url>
-  </ciManagement>
+  </ciManagement>  -->
+  
   <distributionManagement>
-    <site>
-      <id>gh-pages</id>
-      <name>Mybatis GitHub Pages</name>
-      <url>git:ssh://git@github.com/mybatis/jpetstore-6.git?gh-pages#</url>
-    </site>
-	<snapshotRepository>
-		<id>nexus-snapshots</id>
-		<url>http://16.181.235.56:8088/nexus/content/repositories/Jpetstore</url>
-</snapshotRepository>
-</distributionManagement>
-  </distributionManagement> -->
+			
+		<repository>
+			<id>Release.repo</id>
+			<name>your release Repository</name>
+			<url>http://localhost:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		
+		<snapshotRepository>
+			<id>Snapshot.repo</id>
+			<name>Your Snapshot Repository</name>
+			<url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+		
+   </distributionManagement>
+  
 
   <dependencies>
     <dependency>
